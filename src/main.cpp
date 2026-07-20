@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     const int SIZE = 3;
     
-    Student students[DEFAULT_STUDENT_COUNT] = {
+    Student students[SIZE] = {
         {"A123", "Alex", 91.5},
         {"B456", "Maya", 84.0},
         {"C789", "Jordan", 76.5}
@@ -17,7 +17,7 @@ int main() {
     cout << endl;
 
     cout << "All students:" << endl;
-    printStudents(students, SIZE);
+        printStudents(students, SIZE);
     cout << endl;
 
     cout << "Class average: "
