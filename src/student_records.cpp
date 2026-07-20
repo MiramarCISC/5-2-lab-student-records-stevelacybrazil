@@ -10,7 +10,7 @@ bool isValidStudentId(string id) {
         return false;
     }
 
-    if (!isalpha(id[0])) {
+    if (!isupper(id[0])) {
         return false;
     }
 
