@@ -14,7 +14,7 @@ bool isValidStudentId(string id) {
         return false;
     }
 
-    for (int i= 1; i < id.length(); i++) {
+    for (size_t i= 1; i < id.length(); i++) {
         if (!isdigit(id[i])) {
             return false;
         }
