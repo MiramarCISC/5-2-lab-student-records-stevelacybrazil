@@ -6,7 +6,7 @@
 using namespace std;
 
 bool isValidStudentId(string id) {
-    if (id.length() !< 2) {
+    if (id.length() < 2) {
         return false;
     }
 
