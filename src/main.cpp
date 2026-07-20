@@ -5,6 +5,8 @@
 using namespace std;
 
 int main() {
+    const int SIZE = 3;
+    
     Student students[DEFAULT_STUDENT_COUNT] = {
         {"A123", "Alex", 91.5},
         {"B456", "Maya", 84.0},
@@ -15,15 +17,15 @@ int main() {
     cout << endl;
 
     cout << "All students:" << endl;
-    printStudents(students, DEFAULT_STUDENT_COUNT);
+    printStudents(students, SIZE);
     cout << endl;
 
     cout << "Class average: "
-         << calculateAverageScore(students, DEFAULT_STUDENT_COUNT)
+         << calculateAverageScore(students, SIZE)
          << endl;
 
     cout << "Highest score: "
-         << findHighestScore(students, DEFAULT_STUDENT_COUNT)
+         << findHighestScore(students, SIZE)
          << endl;
 
     cout << endl;
@@ -33,7 +35,7 @@ int main() {
     cout << "Enter student ID to search for: ";
     cin >> targetId;
 
-    int index = findStudentById(students, DEFAULT_STUDENT_COUNT, targetId);
+    int index = findStudentById(students, SIZE, targetId);
 
     if (index == -1) {
         cout << "Student not found." << endl;
