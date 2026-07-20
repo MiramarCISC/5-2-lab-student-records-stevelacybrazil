@@ -6,7 +6,7 @@
 using namespace std;
 
 bool isValidStudentId(string id) {
-    if (id.length() != 4) {
+    if (id.length() !< 2) {
         return false;
     }
 
@@ -14,7 +14,7 @@ bool isValidStudentId(string id) {
         return false;
     }
 
-    for (int i= 1; i < 4; i++) {
+    for (int i= 1; i < id.length(); i++) {
         if (!isdigit(id[i])) {
             return false;
         }
